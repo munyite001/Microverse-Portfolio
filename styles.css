@@ -48,14 +48,14 @@ header {
 }
 
 .home {
-  background-color: #1C1A19;
+  background-color: #1c1a19;
   height: 70vh;
   padding: 5rem 0 1rem 1rem;
 }
 
 .home h1 {
   font-size: 50px;
-  color: #FF6B00;
+  color: #ff6b00;
   font-family: 'Crete Round';
   margin-bottom: 1rem;
   letter-spacing: 0.37px;
@@ -100,9 +100,9 @@ header {
   width: 100%;
 }
 
-@media(min-width:700px) {
-.container {
-  margin-right: auto;
-  margin-left: auto;
-}
+@media (min-width: 700px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
