@@ -3,19 +3,23 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   width: 100%;
   height: 100%;
 }
+
 body {
   width: 100%;
   height: 100%;
   font-size: 18px;
 }
+
 main {
   width: 100%;
   height: 100%;
 }
+
 .container {
   width: 100%;
   max-width: 450px;
@@ -30,9 +34,11 @@ header {
   align-items: flex-end;
   padding: 1rem;
 }
+
 .logo-container {
   width: fit-content;
 }
+
 .logo-container p {
   color: white;
   font-size: 18px;
@@ -54,6 +60,7 @@ header {
   margin-bottom: 1rem;
   letter-spacing: 0.37px;
 }
+
 .home h2 {
   font-family: 'Roboto';
   font-weight: 700;
@@ -62,6 +69,7 @@ header {
   color: white;
   margin-bottom: 0.5rem;
 }
+
 .home p {
   font-family: 'Poppins';
   font-size: 16px;
@@ -70,23 +78,28 @@ header {
   color: white;
   max-width: 327px;
 }
+
 .social {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 0.5rem;
 }
+
 .social-icons {
   display: flex;
 }
+
 .illustration {
-margin-left: auto;
-position: relative;
-bottom: 260px;
+  margin-left: auto;
+  position: relative;
+  bottom: 260px;
 }
+
 .illustration img {
   width: 100%;
 }
+
 @media(min-width:700px) {
 .container {
   margin-right: auto;
