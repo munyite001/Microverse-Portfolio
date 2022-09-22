@@ -1,0 +1,5 @@
+# Ignore json files
+package-lock.json
+package.json
+file--D--Microverse-Microverse-Portfolio.html
+node_modules/
