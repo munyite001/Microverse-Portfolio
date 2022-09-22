@@ -52,7 +52,7 @@ header {
 }
 
 .menu-btn {
-margin: auto 1rem;
+  margin: auto 1rem;
 }
 
 .home {
@@ -100,10 +100,7 @@ margin: auto 1rem;
 
 .social-icons {
   display: flex;
-}
-
-.social-icons {
-list-style-type: none;
+  list-style-type: none;
 }
 
 @media (min-width: 700px) {
