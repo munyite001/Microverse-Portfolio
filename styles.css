@@ -105,7 +105,7 @@ header {
 
 /* Work Section */
 .work {
-  margin:5rem 0 5rem;
+  margin: 5rem 0 5rem;
 }
 
 .work .heading {
@@ -297,6 +297,7 @@ header {
 .aboutme hr {
   margin-bottom: 5rem;
 }
+
 .technologies {
   list-style-type: none;
 }
