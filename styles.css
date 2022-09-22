@@ -28,26 +28,38 @@ main {
 header {
   background-color: #3c3a39;
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 1rem;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
 }
 
 .logo-container {
+  margin: auto 1rem;
   width: fit-content;
 }
 
 .logo-container p {
-  color: white;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   font-family: 'Roboto', serif;
 }
 
+.menu-btn {
+margin: auto 1rem;
+}
+
 .home {
+  background-image: url(./assets/Illustration\ 2.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
   background-color: #1c1a19;
   height: 70vh;
   padding: 5rem 0 1rem 1rem;
@@ -90,14 +102,8 @@ header {
   display: flex;
 }
 
-.illustration {
-  margin-left: auto;
-  position: relative;
-  bottom: 260px;
-}
-
-.illustration img {
-  width: 100%;
+.social-icons {
+list-style-type: none;
 }
 
 @media (min-width: 700px) {
