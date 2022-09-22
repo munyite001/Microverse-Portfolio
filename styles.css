@@ -103,6 +103,247 @@ header {
   list-style-type: none;
 }
 
+/* Work Section */
+.work {
+  margin: 5rem 0 5rem;
+}
+
+.work .heading {
+  text-align: center;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Crete Round', serif;
+  margin: 0 auto 2rem auto;
+  color: #1c1a19;
+}
+
+.line {
+  margin: 1rem 2rem 4rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  gap: 15px;
+}
+
+.project {
+  margin: 0 auto;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.sub-heading {
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 44px;
+  font-weight: 400;
+  margin: 1rem 1rem 0.5rem;
+  color: #091e42;
+}
+
+.description {
+  font-family: 'Inter', serif;
+  color: #091e42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: normal;
+  margin: 0 1rem;
+}
+
+.tags {
+  list-style-type: none;
+  margin: 1rem;
+  display: flex;
+  max-width: 250px;
+  justify-content: space-between;
+}
+
+.lang-tag {
+  border: 1px solid #8993a4;
+  outline: none;
+  font-family: 'Inter', serif;
+  font-size: normal;
+  font-size: 15px;
+  color: #091e42;
+  padding: 0.5rem;
+  margin-right: 0.7rem;
+}
+
+.btn {
+  height: 48px;
+  width: 124px;
+  background-color: #ff6b00;
+  color: white;
+  border: none;
+  margin-left: 1rem;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: 'Inter', serif;
+}
+
+.btn:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+.btn:active {
+  background-color: #e05304;
+  color: white;
+}
+
+.style2 {
+  background-image: url(./assets/project-image-placeholder.png);
+  background-repeat: no-repeat;
+  background-color: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+  background-size: 100%;
+}
+
+.sub-heading2 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: white;
+  margin: 5rem 1.5rem 0.5rem 2rem;
+}
+
+.style2 .description {
+  color: white;
+  margin: 0 1rem 1rem 2rem;
+}
+
+.tags-2 {
+  display: flex;
+  list-style-type: none;
+  margin: 0 2rem 1rem;
+}
+
+.tags-2 .lang-tag {
+  background-color: rgba(255, 255, 255, 0.24);
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  border: none;
+}
+
+.style2 .btn {
+  width: 100%;
+  margin: 1rem 0 0;
+  text-align: center;
+}
+
+/* About Me */
+.aboutme {
+  background-color: #1c1a19;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container {
+  margin: 4rem 1rem 1rem;
+  height: 500px;
+  background-image: url(./assets/illustration-about-me-mobile.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.text-container h2 {
+  font-size: 72px;
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+  margin-bottom: 1rem;
+  letter-spacing: 0.37px;
+  text-align: center;
+  line-height: 88px;
+  font-weight: 400;
+}
+
+.text-container p {
+  color: #f4f5f7;
+  margin: 1rem;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: 'Inter', serif;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.aboutme .btn {
+  width: 161px;
+  height: 48px;
+}
+
+.aboutme hr {
+  margin-bottom: 5rem;
+}
+
+.technologies {
+  list-style-type: none;
+}
+
+.languages-container {
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.title h4 {
+  font-family: 'InaiMathi', 'Inter', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.title .img-wrapper img {
+  margin-right: 1rem;
+}
+
+.languages {
+  list-style-type: none;
+}
+
+.languages .language {
+  margin: 1.5rem auto;
+  text-align: center;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  color: white;
+}
+
 @media (min-width: 700px) {
   .container {
     margin-right: auto;
