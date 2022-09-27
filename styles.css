@@ -344,6 +344,98 @@ header {
   color: white;
 }
 
+/* Footer */
+footer {
+  width: 100%;
+  margin: 6rem 0 30rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container .heading {
+  font-family: 'Inter', serif;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  margin: 2rem;
+}
+
+.form-list {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-list .btn {
+  width: 131px;
+  height: 48px;
+}
+
+.text {
+  width: 20rem;
+  height: 3rem;
+  margin: 5px auto;
+  border: none;
+  border-bottom: 2px solid #dbd8d7;
+  padding: 5px 0 0 10px;
+  font-family: 'Inter', serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32rem;
+  text-align: left;
+}
+
+.form-list textarea {
+  background-image: url(./assets/Union.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: #fbf8f7;
+  border: none;
+  margin: 20px auto;
+  padding: 10px 0 0 10px;
+  height: 7rem;
+  width: 20rem;
+  font-family: 'Inter', serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-social li {
+  margin: 0 0.3rem;
+}
+
+.form-container {
+  margin: 0 auto 7rem;
+}
+
+.line2 {
+  background-color: #dfe1e6;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.line3 {
+  margin: 0.5rem 0;
+  height: 8px;
+  background-color: #0d151e;
+  width: 8rem;
+  border-radius: 10px;
+}
+
 @media (min-width: 700px) {
   .container {
     margin-right: auto;
