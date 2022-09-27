@@ -356,7 +356,7 @@ footer {
 }
 
 .footer-container .heading {
-  font-family: 'Inter',serif;
+  font-family: 'Inter', serif;
   font-weight: 700;
   line-height: 44px;
   text-align: center;
@@ -372,7 +372,7 @@ footer {
   align-items: center;
 }
 
-.form-list .btn{
+.form-list .btn {
   width: 131px;
   height: 48px;
 }
@@ -384,11 +384,11 @@ footer {
   border: none;
   border-bottom: 2px solid #dbd8d7;
   padding: 5px 0 0 10px;
-  font-family: 'Inter',serif;
+  font-family: 'Inter', serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0.32rem;
   text-align: left;
 }
 
@@ -402,13 +402,12 @@ footer {
   padding: 10px 0 0 10px;
   height: 7rem;
   width: 20rem;
-  font-family: 'Inter',serif;
+  font-family: 'Inter', serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-
 }
 
 .footer-social {
