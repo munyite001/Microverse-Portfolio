@@ -76,7 +76,6 @@ nav {
   font-weight: 600;
   line-height: 20px;
   text-align: center;
-
 }
 
 .home {
@@ -462,8 +461,7 @@ footer {
 }
 
 /* Desktop Design */
-@media screen and (min-width: 768px)
-{
+@media screen and (min-width: 768px) {
   /* Outer Container */
   .container {
     max-width: 100%;
@@ -617,13 +615,6 @@ footer {
     text-align: start;
   }
 
-  .footer-container {
-    display: grid;
-    grid-template-areas: 
-    "area1 area2"
-    "area3";
-  }
-
   .footer-intro {
     display: flex;
     width: 80%;
@@ -636,7 +627,6 @@ footer {
     line-height: 52px;
     color: #262626;
     text-align: start;
-
   }
 
   .form-list {
@@ -667,5 +657,4 @@ footer {
   .line3 {
     display: none;
   }
-
 } 
