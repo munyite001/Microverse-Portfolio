@@ -466,7 +466,7 @@ footer {
   .container {
     max-width: 100%;
   }
-  
+
   nav {
     width: 90%;
     margin: 0 auto;
@@ -535,12 +535,12 @@ footer {
     text-align: start;
     margin: 0;
   }
-  
+
   .line {
     width: 70%;
     margin: auto 0 auto auto;
   }
-  
+
   .projects-container {
     width: 80%;
     margin: 1rem auto;
@@ -657,4 +657,4 @@ footer {
   .line3 {
     display: none;
   }
-} 
+}
