@@ -645,10 +645,12 @@ footer {
 
   .text {
     width: 30rem;
+    letter-spacing: 1px;
   }
 
   .form-list textarea {
     width: 30rem;
+    letter-spacing: 1px;
   }
 
   .form-list .btn {
