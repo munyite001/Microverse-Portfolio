@@ -30,8 +30,14 @@ header {
   width: 100%;
   height: 4rem;
   display: flex;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .logo {
@@ -55,6 +61,24 @@ header {
   margin: auto 1rem;
 }
 
+.nav-list {
+  list-style-type: none;
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.nav-link {
+  margin: auto 0.5rem;
+  color: white;
+  font-family: 'Inter', serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+
+}
+
 .home {
   background-image: url(./assets/Illustration\ 2.png);
   background-repeat: no-repeat;
@@ -65,7 +89,7 @@ header {
   padding: 5rem 0 1rem 1rem;
 }
 
-.home h1 {
+.text-wrapper h1 {
   font-size: 50px;
   color: #ff6b00;
   font-family: 'Crete Round', serif;
@@ -73,7 +97,7 @@ header {
   letter-spacing: 0.37px;
 }
 
-.home h2 {
+.text-wrapper h2 {
   font-family: 'Roboto', serif;
   font-weight: 700;
   font-size: 24px;
@@ -82,7 +106,7 @@ header {
   margin-bottom: 0.5rem;
 }
 
-.home p {
+.text-wrapper p {
   font-family: 'Poppins', serif;
   font-size: 16px;
   line-height: 24px;
@@ -108,7 +132,7 @@ header {
   margin: 5rem 0 5rem;
 }
 
-.work .heading {
+.title-intro .heading {
   text-align: center;
   font-size: 40px;
   line-height: 52px;
@@ -214,6 +238,7 @@ header {
   background-repeat: no-repeat;
   background-color: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
   background-size: 100%;
+  max-width: 300px;
 }
 
 .sub-heading2 {
@@ -268,7 +293,7 @@ header {
   background-position: right bottom;
 }
 
-.text-container h2 {
+.text-section h2 {
   font-size: 72px;
   color: #ff6b00;
   font-family: 'Crete Round', serif;
@@ -279,7 +304,7 @@ header {
   font-weight: 400;
 }
 
-.text-container p {
+.text-section p {
   color: #f4f5f7;
   margin: 1rem;
   line-height: 24px;
@@ -289,7 +314,7 @@ header {
   font-style: normal;
 }
 
-.aboutme .btn {
+.text-section .btn {
   width: 161px;
   height: 48px;
 }
@@ -356,7 +381,7 @@ footer {
   align-items: center;
 }
 
-.footer-container .heading {
+.footer-intro .heading {
   font-family: 'Inter', serif;
   font-weight: 700;
   line-height: 44px;
@@ -436,9 +461,211 @@ footer {
   border-radius: 10px;
 }
 
-@media (min-width: 700px) {
+/* Desktop Design */
+@media screen and (min-width: 768px)
+{
+  /* Outer Container */
   .container {
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 100%;
   }
-}
+  
+  nav {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .menu-btn {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+
+  .nav-list {
+    display: flex;
+    width: auto;
+    height: auto;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+    align-items: center;
+    background-image: url(./assets/Desktop\ -\ Illustration-header.png);
+    background-position: center right;
+  }
+
+  .social {
+    width: auto;
+    margin: 0 auto 0 0;
+  }
+
+  .social-icons {
+    flex-direction: column;
+  }
+
+  .text-wrapper {
+    width: 100%;
+    margin: 0 auto 0 3rem;
+  }
+
+  .text-wrapper h1 {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 82px;
+  }
+
+  .text-wrapper h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .text-wrapper p {
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 400px;
+  }
+
+  .title-intro {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 5rem auto;
+  }
+
+  .title-intro .heading {
+    text-align: start;
+    margin: 0;
+  }
+  
+  .line {
+    width: 70%;
+    margin: auto 0 auto auto;
+  }
+  
+  .projects-container {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  .style1 {
+    flex-direction: row;
+  }
+
+  .style1 .image-container {
+    width: 50%;
+  }
+
+  .style1 .wrap-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .style2 {
+    margin: 1rem;
+  }
+
+  .project-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* About me section */
+  .aboutme {
+    justify-content: center;
+  }
+
+  .text-container {
+    display: flex;
+    align-items: center;
+    background-image: url(./assets/about\ me\ background.png);
+    background-position: center right;
+    height: 50vh;
+  }
+
+  .text-section {
+    width: 500px;
+    margin: 0 0 0 5rem;
+  }
+
+  .text-section h2 {
+    text-align: start;
+  }
+
+  .text-section p {
+    margin: 1rem 1rem 1rem 0;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .text-section .btn {
+    margin: 1rem 0 0 0;
+  }
+
+  .aboutme hr {
+    width: 90%;
+    margin: 5rem auto;
+  }
+
+  .technologies {
+    display: flex;
+  }
+
+  .languages .language {
+    text-align: start;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-areas: 
+    "area1 area2"
+    "area3";
+  }
+
+  .footer-intro {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .footer-intro .heading {
+    width: 50%;
+    font-size: 40px;
+    line-height: 52px;
+    color: #262626;
+    text-align: start;
+
+  }
+
+  .form-list {
+    align-items: start;
+  }
+
+  .footer-intro .form-container {
+    width: 50%;
+  }
+
+  .text {
+    width: 30rem;
+  }
+
+  .form-list textarea {
+    width: 30rem;
+  }
+
+  .form-list .btn {
+    margin: 1rem 0 0 0;
+  }
+
+  .footer-social {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .line3 {
+    display: none;
+  }
+
+} 
