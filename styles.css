@@ -24,6 +24,7 @@ main {
 .container {
   width: 100%;
   max-width: 450px;
+  margin: 0 auto;
 }
 
 header {
@@ -76,7 +77,13 @@ nav {
   font-size: 15px;
   font-weight: 600;
   line-height: 20px;
+  letter-spacing: 0.05rem;
   text-align: center;
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid white;
+  padding-bottom: 0.2rem;
 }
 
 .nav-link a {
@@ -212,6 +219,12 @@ nav {
   color: #091e42;
   padding: 0.5rem;
   margin-right: 0.7rem;
+  transition: all .2s linear;
+}
+
+.lang-tag:hover {
+  border-color: #e05304;
+  cursor: pointer;
 }
 
 .btn {
@@ -225,6 +238,7 @@ nav {
   font-weight: 700;
   line-height: 24px;
   font-family: 'Inter', serif;
+  transition: all .5s linear;
 }
 
 .btn:hover {
@@ -585,8 +599,9 @@ footer {
     display: flex;
     align-items: center;
     background-image: url(./assets/about\ me\ background.png);
-    background-position: center right;
+    background-position: right center;
     height: 50vh;
+    margin-right: 0;
   }
 
   .text-section {
@@ -664,5 +679,46 @@ footer {
 
   .line3 {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .text-container {
+    background-position: bottom right;
+    background-size: 50% 50%;
+  }
+
+  .home {
+    background-position: bottom right;
+    background-size: 50% 50%;
+  }
+}
+
+/* Animations */
+#animated-heading {
+  animation: slide 3s 1;
+}
+
+@keyframes slide {
+  from {
+    margin-left: 30%;
+  }
+
+  to {
+    margin-left: 0;
+  }
+}
+
+.aboutme .btn {
+  animation: slidein 2s 1;
+}
+
+@keyframes slidein {
+  from {
+    transform: translate(-200%);
   }
 }
