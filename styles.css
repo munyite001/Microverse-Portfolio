@@ -219,7 +219,7 @@ nav {
   color: #091e42;
   padding: 0.5rem;
   margin-right: 0.7rem;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 .lang-tag:hover {
@@ -238,7 +238,7 @@ nav {
   font-weight: 700;
   line-height: 24px;
   font-family: 'Inter', serif;
-  transition: all .5s linear;
+  transition: all 0.5s linear;
 }
 
 .btn:hover {
