@@ -315,11 +315,11 @@ nav {
   font-size: 72px;
   color: #ff6b00;
   font-family: 'Crete Round', serif;
-  margin: 1rem 2rem 1rem 0;
-  letter-spacing: 0.37px;
+  margin: 1rem 3rem 1rem 1rem;
   text-align: center;
   line-height: 88px;
   font-weight: 400;
+  text-align: start;
 }
 
 .text-section p {
@@ -702,12 +702,12 @@ footer {
 }
 
 @keyframes slide {
-  from {
-    margin-left: 30%;
+  0% {
+    transform: translate(100%);
   }
 
-  to {
-    margin-left: 0;
+  100% {
+    transform: translate(0%);
   }
 }
 
