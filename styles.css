@@ -94,10 +94,9 @@ nav {
 .home {
   background-image: url(./assets/Illustration\ 2.png);
   background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: bottom;
+  background-position: right bottom;
   background-color: #1c1a19;
-  height: 70vh;
+  height: 100vh;
   padding: 5rem 0 1rem 1rem;
 }
 
@@ -720,5 +719,18 @@ footer {
 @keyframes slidein {
   from {
     transform: translate(-200%);
+  }
+}
+
+.fade {
+  animation: fade-in 5s 1;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
