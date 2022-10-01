@@ -432,7 +432,7 @@ footer {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.32rem;
+  letter-spacing: 1px;
   text-align: left;
 }
 
@@ -451,6 +451,7 @@ footer {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+  letter-spacing: 1px;
 }
 
 .footer-social {
@@ -659,12 +660,10 @@ footer {
 
   .text {
     width: 30rem;
-    letter-spacing: 1px;
   }
 
   .form-list textarea {
     width: 30rem;
-    letter-spacing: 1px;
   }
 
   .form-list .btn {
