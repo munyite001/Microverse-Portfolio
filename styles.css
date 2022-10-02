@@ -316,7 +316,6 @@ nav {
   color: #ff6b00;
   font-family: 'Crete Round', serif;
   margin: 1rem 3rem 1rem 1rem;
-  text-align: center;
   line-height: 88px;
   font-weight: 400;
   text-align: start;
@@ -722,7 +721,7 @@ footer {
 }
 
 .fade {
-  animation: fade-in 5s 1;
+  animation: fade-in 7s 1;
 }
 
 @keyframes fade-in {
