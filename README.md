@@ -3,7 +3,7 @@
 # My Portfolio
 
 > My Microverse portfolio
-> [Live site](https://github.com/munyite001/Microverse-Portfolio.github.io)
+> [Live site](https://munyite001.github.io/Microverse-Portfolio/)
 
 
 ## Built With
