@@ -21,7 +21,7 @@ closeBtn.addEventListener('click', () => {
 
 //  Add an event listener for the menu links in order
 // to close the mobile menu when a link is clicked
-menuLinks.forEach(link, (link) => {
+menuLinks.forEach((link) => {
   link.addEventListener('click', () => {
     mobileMenu.classList.remove('show-mobile-menu');
   });
