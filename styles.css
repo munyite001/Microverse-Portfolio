@@ -1,3 +1,8 @@
+/* Css Variables */
+:root {
+  --linear-bg: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -106,7 +111,7 @@ nav {
   right: 0;
   background-color: #3c3a39;
   padding: 2rem;
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
   max-width: 600px;
 }
 
@@ -145,7 +150,7 @@ nav {
   letter-spacing: 0.5rem;
 }
 
-/*  Home Section*/
+/*  Home Section */
 .home {
   background-image: url(./assets/Illustration\ 2.png);
   background-repeat: no-repeat;
@@ -268,7 +273,6 @@ nav {
   border: 1px solid #8993a4;
   outline: none;
   font-family: 'Inter', serif;
-  font-size: normal;
   font-size: 15px;
   color: #091e42;
   padding: 0.5rem;
@@ -309,7 +313,7 @@ nav {
 .style2 {
   background-image: url(./assets/project-image-placeholder.png);
   background-repeat: no-repeat;
-  background-color: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+  background-color: var(--linear-bg);
   background-size: 100%;
   max-width: 300px;
 }
@@ -541,6 +545,7 @@ footer {
   .mobile-menu {
     display: none;
   }
+
   /* Outer Container */
   .container {
     max-width: 100%;
