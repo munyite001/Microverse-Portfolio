@@ -15,10 +15,10 @@
     <header>
       <nav>
         <div class="logo-container">
-          <P><a href="./index.html" class="logo">Emmanuel</a></P>
+          <p><a href="#home" class="logo">Emmanuel</a></p>
         </div>
         <div class="menu-btn">
-          <img src="./assets/menu-icon.png" alt="Menu Icon">
+          <img src="./assets/menu-icon.png" alt="Menu Icon" id="mobile-menu-btn">
         </div>
         <ul class="nav-list">
           <li class="nav-link"><a href="#work">Portfolio</a></li>
@@ -33,7 +33,17 @@
       </nav>
     </header>
     <main>
-      <section class="home">
+      <div class="mobile-menu">
+        <div class="btn-container">
+          <img src="./assets/close-btn.png" alt="Close sidebar Button" id="close-btn">
+        </div>
+        <ul class="menu-list">
+          <li class="menu-link"><a href="#work">Portfolio</a></li>
+          <li class="menu-link"><a href="#about">About</a></li>
+          <li class="menu-link"><a href="#footer">Contact</a></li>
+        </ul>
+      </div>
+      <section class="home" id="home">
         <div class="text-wrapper">
           <h1>Hey There.<br>I'm Emmanuel</h1>
           <h2>I'm a software Developer</h2>
@@ -288,5 +298,6 @@
       </div>
     </footer>
   </div>
+  <script src="./app.js"></script>
 </body>
 </html>

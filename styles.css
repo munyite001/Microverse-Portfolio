@@ -1,3 +1,8 @@
+/* Css Variables */
+:root {
+  --linear-bg: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -33,11 +38,15 @@ header {
   height: 4rem;
   display: flex;
   align-items: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
 }
 
 nav {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -91,6 +100,61 @@ nav {
   color: white;
 }
 
+/* SideBar Mobile Menu */
+.mobile-menu {
+  transform: translateX(-100%);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #3c3a39;
+  padding: 2rem;
+  transition: transform 0.2s linear;
+  max-width: 600px;
+}
+
+.show-mobile-menu {
+  transform: translate(0);
+}
+
+#close-btn:hover {
+  transform: rotate(180deg);
+}
+
+.mobile-menu .btn-container {
+  display: flex;
+  justify-content: end;
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.menu-link {
+  width: 100%;
+  border-bottom: 1px solid #6f6c6b;
+  padding: 0 0 1rem 1rem;
+  margin: 1rem 0;
+}
+
+.menu-link a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+  transition: all 0.2s linear;
+}
+
+.menu-link a:hover {
+  letter-spacing: 0.5rem;
+}
+
+/*  Home Section */
 .home {
   background-image: url(./assets/Illustration\ 2.png);
   background-repeat: no-repeat;
@@ -213,7 +277,6 @@ nav {
   border: 1px solid #8993a4;
   outline: none;
   font-family: 'Inter', serif;
-  font-size: normal;
   font-size: 15px;
   color: #091e42;
   padding: 0.5rem;
@@ -254,7 +317,7 @@ nav {
 .style2 {
   background-image: url(./assets/project-image-placeholder.png);
   background-repeat: no-repeat;
-  background-color: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+  background-color: var(--linear-bg);
   background-size: 100%;
   max-width: 300px;
 }
@@ -482,6 +545,11 @@ footer {
 
 /* Desktop Design */
 @media screen and (min-width: 768px) {
+  /* Mobile Menu */
+  .mobile-menu {
+    display: none;
+  }
+
   /* Outer Container */
   .container {
     max-width: 100%;
