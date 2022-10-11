@@ -573,7 +573,7 @@ footer {
 }
 
 .modal-heading .sub-heading {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -620,7 +620,7 @@ footer {
 }
 
 .right p {
-  font-family: 'Inter';
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -635,7 +635,7 @@ footer {
 
 .right .btn a {
   text-decoration: none;
-  font-family: 'Inter';
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -822,7 +822,7 @@ footer {
     line-height: 52px;
     color: #262626;
     text-align: start;
-    padding:0 5rem 0 0;
+    padding: 0 5rem 0 0;
   }
 
   .form-list {
@@ -894,7 +894,6 @@ footer {
     height: 100%;
     padding: 1rem 1rem 0;
   }
-
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
