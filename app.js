@@ -149,7 +149,7 @@ projectBtns.forEach((btn) => {
     </div>
   `;
 
-  modal.style.visibility = 'visible';
+    modal.style.visibility = 'visible';
 
     const closeBtn = document.querySelector('.close-modal');
 
