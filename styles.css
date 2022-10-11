@@ -563,7 +563,7 @@ footer {
 .modal-content {
   background-color: #fff;
   width: 90%;
-  max-height: auto;
+  height: auto;
 }
 
 .modal-heading {
