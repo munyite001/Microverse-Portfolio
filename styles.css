@@ -883,6 +883,16 @@ footer {
 
   .modal-list {
     margin-top: 0;
+    justify-content: unset;
+  }
+
+  .modal-tags {
+    margin: 0 0.5rem 0 0;
+  }
+
+  .left .image-container {
+    height: 100%;
+    padding: 1rem 1rem 0;
   }
 
 }
