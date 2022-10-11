@@ -543,6 +543,110 @@ footer {
   border-radius: 10px;
 }
 
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  visibility: hidden;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 90%;
+  height: 90%;
+}
+
+.modal-heading {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 0 0;
+}
+
+.modal-heading .sub-heading {
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.close-modal {
+  font-size: 2rem;
+  font-weight: 900;
+  transition: transform 0.2s linear;
+}
+
+.close-modal:hover {
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.modal-content .wrapper {
+  width: 100%;
+}
+
+.modal-content .wrapper .left {
+  width: 100%;
+}
+
+.modal-tags {
+  margin-right: 1rem;
+  width: auto;
+  max-height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left .image-container {
+  width: 100%;
+  padding: 1rem;
+}
+
+.left .image-container .modal-image {
+  width: 100%;
+  height: 100%;
+}
+
+.right p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: start;
+  margin: 1rem;
+}
+
+.right .btn {
+  width: 9rem;
+}
+
+.right .btn a {
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: white;
+}
+
+.modal-icon {
+  margin: 0 0 0 1rem;
+}
+
 /* Desktop Design */
 @media screen and (min-width: 768px) {
   /* Mobile Menu */
@@ -609,7 +713,7 @@ footer {
   .text-wrapper p {
     font-size: 20px;
     line-height: 32px;
-    max-width: 400px;
+    max-width: 700px;
   }
 
   .title-intro {
@@ -636,6 +740,7 @@ footer {
 
   .style1 {
     flex-direction: row;
+    max-width: 80%;
   }
 
   .style1 .image-container {
@@ -649,7 +754,7 @@ footer {
   }
 
   .style2 {
-    margin: 1rem;
+    margin: 1rem 2rem;
   }
 
   .project-wrapper {
@@ -673,12 +778,13 @@ footer {
   }
 
   .text-section {
-    width: 500px;
+    width: 720px;
     margin: 0 0 3rem 5rem;
   }
 
   .text-section h2 {
     text-align: start;
+    margin: 0;
   }
 
   .text-section p {
@@ -716,6 +822,7 @@ footer {
     line-height: 52px;
     color: #262626;
     text-align: start;
+    padding:0 5rem 0 0;
   }
 
   .form-list {
@@ -746,6 +853,38 @@ footer {
   .line3 {
     display: none;
   }
+
+  /* Modal styles for bigger screens */
+  .modal-content {
+    width: 70%;
+    height: 80%;
+  }
+
+  .modal-content .wrapper {
+    height: 70%;
+    display: flex;
+  }
+
+  .modal-content .wrapper .left {
+    width: 60%;
+  }
+
+  .modal-content .wrapper .right {
+    width: 40%;
+    height: 100%;
+    margin: 3rem 1rem 4rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-btn-container {
+    margin-top: auto;
+  }
+
+  .modal-list {
+    margin-top: 0;
+  }
+
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
