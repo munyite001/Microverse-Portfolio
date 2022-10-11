@@ -135,12 +135,12 @@ projectBtns.forEach((btn) => {
         </p>
         <div class="modal-btn-container">
           <a href="${data[i].liveUrl}" target="_blank">
-            <button class="btn">
+            <button class="btn modal-live-buttons">
               See Live <img src="./assets/see-live -icon.svg" alt="see live icon" class="modal-icon">
             </button>
           </a>
           <a href="${data[i].githubRepo}" target="_blank">
-            <button class="btn">
+            <button class="btn modal-live-buttons">
               See source<img src="./assets/git modal icon.png" alt="Git Modal Icon" class="modal-icon">
             </button>
           </a>
