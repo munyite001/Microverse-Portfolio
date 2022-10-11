@@ -79,8 +79,8 @@ const data = [
     consectetur tempore ipsa eligendi iste, et, at quos quia tenetur inventore odit alias.`,
     liveUrl: 'https://order-summary-card-f-mentor.netlify.app/',
     githubRepo: 'https://github.com/munyite001/Microverse-Portfolio',
-  }
-]
+  },
+];
 
 //  Get the open and close menu btns
 const openBnt = document.getElementById('mobile-menu-btn');
@@ -112,8 +112,8 @@ const projectBtns = document.querySelectorAll('.modal-btn');
 
 projectBtns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
-  const i = parseInt(e.currentTarget.dataset.id, 10) - 1;
-  modalContent.innerHTML = `
+    const i = parseInt(e.currentTarget.dataset.id, 10) - 1;
+    modalContent.innerHTML = `
     <div class='modal-heading'>
       <h3 class='sub-heading'>${data[i].heading}</h3>
       <span class='close-modal'>&times;</span>
@@ -151,10 +151,10 @@ projectBtns.forEach((btn) => {
 
   modal.style.visibility = 'visible';
 
-  const closeBtn = document.querySelector('.close-modal');
+    const closeBtn = document.querySelector('.close-modal');
 
-  closeBtn.addEventListener('click', () => {
-    modal.style.visibility = 'hidden';
-  });
+    closeBtn.addEventListener('click', () => {
+      modal.style.visibility = 'hidden';
+    });
   });
 });
