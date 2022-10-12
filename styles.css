@@ -965,3 +965,13 @@ footer {
     opacity: 1;
   }
 }
+
+/* Validation */
+.error {
+  display: none;
+  font-family: 'Inter', serif;
+  color: red;
+  margin-top: 1rem;
+  font-size: 20px;
+  text-align: center;
+}
