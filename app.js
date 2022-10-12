@@ -179,6 +179,7 @@ form.addEventListener('submit', (e) => {
   else
   {
     error.style.display = 'block';
+    form.elements['email'].style.border = '1px solid red';
   }
 });
 
