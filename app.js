@@ -84,6 +84,7 @@ const data = [
 
 //  Get the open and close menu btns
 const openBnt = document.getElementById('mobile-menu-btn');
+const closeMenu = document.getElementById('close-btn');
 
 //  Then we also get the mobile menu
 const mobileMenu = document.querySelector('.mobile-menu');
@@ -95,6 +96,10 @@ const menuLinks = document.querySelectorAll('.menu-link');
 //  Add an event listener for the menu open btn
 openBnt.addEventListener('click', () => {
   mobileMenu.classList.add('show-mobile-menu');
+});
+
+closeMenu.addEventListener('click', () => {
+  mobileMenu.classList.remove('show-mobile-menu');
 });
 
 //  Add an event listener for the menu links in order
