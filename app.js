@@ -174,9 +174,8 @@ form.addEventListener('submit', (e) => {
 
   if (emailInput === correctInput) {
     form.submit(); 
-    }
-  else {
+  } else {
     error.style.display = 'block';
     form.elements.email.style.border = '1px solid red';
-    }
+  }
 });
