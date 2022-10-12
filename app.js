@@ -163,3 +163,24 @@ projectBtns.forEach((btn) => {
     });
   });
 });
+
+//  Email validation
+const form = document.querySelector('.portfolio-form');
+const error = document.querySelector('.error');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const emailInput = form.elements['email'].value;
+  const correctInput = emailInput.toLowerCase();
+
+  if (emailInput == correctInput)
+  {
+    form.submit();
+  }
+  else
+  {
+    error.style.display = 'block';
+  }
+});
+
+
+
