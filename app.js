@@ -169,19 +169,14 @@ const form = document.querySelector('.portfolio-form');
 const error = document.querySelector('.error');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const emailInput = form.elements['email'].value;
+  const emailInput = form.elements.email.value;
   const correctInput = emailInput.toLowerCase();
 
-  if (emailInput == correctInput)
-  {
+  if (emailInput === correctInput){
     form.submit();
   }
-  else
-  {
+  else{
     error.style.display = 'block';
-    form.elements['email'].style.border = '1px solid red';
+    form.elements.email.style.border = '1px solid red';
   }
 });
-
-
-
