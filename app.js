@@ -173,7 +173,7 @@ form.addEventListener('submit', (e) => {
   const correctInput = emailInput.toLowerCase();
 
   if (emailInput === correctInput) {
-    form.submit(); 
+    form.submit();
   } else {
     error.style.display = 'block';
     form.elements.email.style.border = '1px solid red';
