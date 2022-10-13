@@ -164,9 +164,16 @@ projectBtns.forEach((btn) => {
   });
 });
 
+//  Object to store User Data in Local Storage
+const userData = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+//  Local Storage
 // Function to save data in local storage
-function saveData()
-{
+function saveData() {
   userData.name = userName.value;
   userData.email = userEmail.value;
   userData.message = userMessage.value;
@@ -192,16 +199,9 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-//  Local Storage
 const userName = document.getElementById('name');
 const userEmail = document.getElementById('email');
 const userMessage = document.getElementById('message');
-
-const userData = {
-  name: '',
-  email: '',
-  message: '',
-};
 
 const getData = localStorage.getItem('UserData');
 const newData = JSON.parse(getData);
