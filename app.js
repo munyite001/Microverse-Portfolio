@@ -164,6 +164,17 @@ projectBtns.forEach((btn) => {
   });
 });
 
+// Function to save data in local storage
+function saveData()
+{
+  userData.name = userName.value;
+  userData.email = userEmail.value;
+  userData.message = userMessage.value;
+  // Convert userData to JSON format
+  const localData = JSON.stringify(userData);
+  localStorage.setItem('UserData', localData);
+}
+
 //  Email validation
 const form = document.querySelector('.portfolio-form');
 const error = document.querySelector('.error');
@@ -181,34 +192,19 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-
 //  Local Storage
 const userName = document.getElementById('name');
-const userEmail = document.getElementById('email')
+const userEmail = document.getElementById('email');
 const userMessage = document.getElementById('message');
 
-
-let userData = {
+const userData = {
   name: '',
   email: '',
-  message: ''
-}
-
-function saveData()
-{
-  userData.name = userName.value;
-  userData.email = userEmail.value;
-  userData.message = userMessage.value;
-  // Convert userData to JSON format
-  const localData = JSON.stringify(userData);
-  localStorage.setItem('UserData', localData);
-}
+  message: '',
+};
 
 const getData = localStorage.getItem('UserData');
 const newData = JSON.parse(getData);
 userName.value = newData.name;
 userEmail.value = newData.email;
 userMessage.value = newData.message;
-
-
-
