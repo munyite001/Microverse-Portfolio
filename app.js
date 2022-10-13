@@ -164,34 +164,6 @@ projectBtns.forEach((btn) => {
   });
 });
 
-//  Local Storage
-//  Object to store User Data in Local Storage
-const userData = {
-  name: '',
-  email: '',
-  message: '',
-};
-
-const userName = document.getElementById('name');
-const userEmail = document.getElementById('email');
-const userMessage = document.getElementById('message');
-
-const getData = localStorage.getItem('UserData');
-const newData = JSON.parse(getData);
-userName.value = newData.name;
-userEmail.value = newData.email;
-userMessage.value = newData.message;
-
-// Function to save data in local storage
-function saveData() {
-  userData.name = userName.value;
-  userData.email = userEmail.value;
-  userData.message = userMessage.value;
-  // Convert userData to JSON format
-  const localData = JSON.stringify(userData);
-  localStorage.setItem('UserData', localData);
-}
-
 //  Email validation
 const form = document.querySelector('.portfolio-form');
 const error = document.querySelector('.error');
@@ -201,10 +173,51 @@ form.addEventListener('submit', (e) => {
   const correctInput = emailInput.toLowerCase();
 
   if (emailInput === correctInput) {
-    saveData();
     form.submit();
   } else {
     error.style.display = 'block';
     form.elements.email.style.border = '1px solid red';
   }
+});
+
+//  Local Storage
+
+//  Get our input fields
+const userName = document.getElementById('name');
+const userEmail = document.getElementById('email');
+const userMessage = document.getElementById('message');
+
+window.onload = () => {
+  //  Check if there is data stored in local storage and fill the inputs
+  const localData = localStorage;
+
+  if (localData.name || localData.email || localData.message)
+  {
+    userName.value = localData.name;
+    userEmail.value = localData.email;
+    userMessage.value = localData.message;
+  }
+}
+
+//  Object to store User Data in Local Storage
+const userData = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+//  Add event listeners to the form input fields and update the values consistently
+userName.addEventListener('input', () => {
+  userData.name = userName.value;
+  localStorage.setItem('Name', userData.name);
+});
+
+userEmail.addEventListener('input', () => {
+  userData.email = userEmail.value;
+  localStorage.setItem('Email', userData.email);
+});
+
+userMessage.addEventListener('input', () => {
+  userData.message = userMessage.value;
+  localStorage.setItem('Name', userData.message);
 });
