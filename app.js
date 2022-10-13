@@ -173,9 +173,42 @@ form.addEventListener('submit', (e) => {
   const correctInput = emailInput.toLowerCase();
 
   if (emailInput === correctInput) {
+    saveData();
     form.submit();
   } else {
     error.style.display = 'block';
     form.elements.email.style.border = '1px solid red';
   }
 });
+
+
+//  Local Storage
+const userName = document.getElementById('name');
+const userEmail = document.getElementById('email')
+const userMessage = document.getElementById('message');
+
+
+let userData = {
+  name: '',
+  email: '',
+  message: ''
+}
+
+function saveData()
+{
+  userData.name = userName.value;
+  userData.email = userEmail.value;
+  userData.message = userMessage.value;
+  // Convert userData to JSON format
+  const localData = JSON.stringify(userData);
+  localStorage.setItem('UserData', localData);
+}
+
+const getData = localStorage.getItem('UserData');
+const newData = JSON.parse(getData);
+userName.value = newData.name;
+userEmail.value = newData.email;
+userMessage.value = newData.message;
+
+
+
