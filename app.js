@@ -180,44 +180,34 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-//  Local Storage
+//  Local storage
 
-//  Get our input fields
-const userName = document.getElementById('name');
-const userEmail = document.getElementById('email');
-const userMessage = document.getElementById('message');
+const formFields = document.querySelectorAll('.form-field');
+const formArr = Array.from(formFields);
 
-window.onload = () => {
-  //  Check if there is data stored in local storage and fill the inputs
-  const localData = localStorage;
-
-  if (localData.name || localData.email || localData.message)
-  {
-    userName.value = localData.name;
-    userEmail.value = localData.email;
-    userMessage.value = localData.message;
-  }
-}
-
-//  Object to store User Data in Local Storage
 const userData = {
   name: '',
   email: '',
   message: '',
-};
+}
 
-//  Add event listeners to the form input fields and update the values consistently
-userName.addEventListener('input', () => {
-  userData.name = userName.value;
-  localStorage.setItem('Name', userData.name);
+formArr.forEach((input) => {
+  input.addEventListener('input', () =>{
+    userData.name = formArr[0].value;
+    userData.email = formArr[1].value;
+    userData.message = formArr[2].value;
+
+    localStorage.setItem('Name', userData.name);
+    localStorage.setItem('Email', userData.email);
+    localStorage.setItem('Message', userData.message);
+  });
 });
 
-userEmail.addEventListener('input', () => {
-  userData.email = userEmail.value;
-  localStorage.setItem('Email', userData.email);
-});
-
-userMessage.addEventListener('input', () => {
-  userData.message = userMessage.value;
-  localStorage.setItem('Name', userData.message);
+window.addEventListener('load', () => {
+  const localData = localStorage;
+  if(localData) {
+    formArr[0].value = localData.Name;
+    formArr[1].value = localData.Email;
+    formArr[2].value = localData.Message;
+  }
 });
