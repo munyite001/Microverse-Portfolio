@@ -179,3 +179,35 @@ form.addEventListener('submit', (e) => {
     form.elements.email.style.border = '1px solid red';
   }
 });
+
+//  Local storage
+
+const formFields = document.querySelectorAll('.form-field');
+const formArr = Array.from(formFields);
+
+const userData = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+formArr.forEach((input) => {
+  input.addEventListener('input', () => {
+    userData.name = formArr[0].value;
+    userData.email = formArr[1].value;
+    userData.message = formArr[2].value;
+
+    localStorage.setItem('Name', userData.name);
+    localStorage.setItem('Email', userData.email);
+    localStorage.setItem('Message', userData.message);
+  });
+});
+
+window.addEventListener('load', () => {
+  const localData = localStorage;
+  if (localData) {
+    formArr[0].value = localData.Name;
+    formArr[1].value = localData.Email;
+    formArr[2].value = localData.Message;
+  }
+});
